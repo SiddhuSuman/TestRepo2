@@ -1,5 +1,1 @@
 language: dart
-dart:
-  - stable
-  - dev
-  - "1.8.5"
