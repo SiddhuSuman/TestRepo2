@@ -1,0 +1,13 @@
+<div class="container">
+  <div class="col-md-3" ng-repeat="list in orderItems">
+    <div class="well">
+      <ul>
+        <li ng-repeat="items in list">
+          {{items}}
+        </li>
+      </ul>
+      <button class="btn btn-block btn-danger">Order Ready</button>
+    </div>
+  </div>
+</div>
+

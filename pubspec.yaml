@@ -1,0 +1,26 @@
+name: mongo_pro
+description: A sample application
+dependencies:
+  angular: any
+  angular_ui: any
+  bootstrap: any
+  browser: any
+  http_server: any
+  jquery: any
+  mongo_dart: any
+  objectory: any
+  paper_elements: any
+  stream: any
+  web_components: any
+transformers:
+- angular:
+    html_files:
+    - lib/component/menu_controller.html
+    - lib/component/add_menuitem_component.html
+    - lib/component/edit_menuitem_controller.html
+    - lib/component/editor_controller.html
+    - lib/component/kitchen_component.html
+    - lib/component/preview_component.html
+- bootstrap:
+    url: //maxcdn.bootstrapcdn.com/bootstrap/{{version}}
+    version: 3.2.0

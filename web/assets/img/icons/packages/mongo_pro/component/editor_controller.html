@@ -1,0 +1,18 @@
+<div ng-if="categoryWiseItems.isNotEmpty">
+                <div class="row">
+                    <div class="col-lg-12" ng-repeat="item in categoryWiseItems">
+                        <div class="row">
+                            <div class="col-lg-8">
+                                <p><t>{{item.name}}</t> <span class="pointer fa fa-edit" ng-click="editItem(item.menuItemId)"></span> <span class="pointer fa fa-trash" ng-click="removeItem(item.menuItemId)"></span><br/>
+                                    {{item.description}}<br/>
+                                    <rating max-rating="5" rating="item.rating"></rating>
+                                </p>
+                            </div>
+                            <div class="col-lg-4">
+                                <p><span class="fa fa-rupee"></span>  {{item.price}} <br/>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
